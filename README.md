@@ -2,7 +2,7 @@
 
 A classic Snake game implementation built with React.js. Move the snake using arrow keys, collect food to grow, and avoid collisions with walls and yourself!
 
-[![React](https://img.shields.io/badge/React-18.x-blue)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/NextJs-15.x-blue)](https://reactjs.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
 ![Gameplay Screenshot](public/snake-game-play.jpg)
