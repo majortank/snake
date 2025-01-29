@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Snake Game
 
-## Getting Started
+A classic Snake game implementation built with React.js. Move the snake using arrow keys, collect food to grow, and avoid collisions with walls and yourself!
 
-First, run the development server:
+[![React](https://img.shields.io/badge/React-18.x-blue)](https://reactjs.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
+![Gameplay Screenshot](public/snake-game-play.jpg)
+
+## Features
+
+- Classic snake game mechanics
+- Responsive grid-based gameplay
+- Score tracking system
+- Collision detection (walls & self-collision)
+- Game over screen with restart functionality
+- Smooth keyboard controls
+- Modern UI with clean animations
+- 20x20 game grid
+
+## Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/majortank/snake.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+cd snake
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Start the development server:
+```bash
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to Play
 
-## Learn More
+- Use arrow keys (↑ ↓ ← →) to control the snake's direction
+- Collect red food dots to grow and increase your score
+- Avoid hitting walls or the snake's own body
+- Game ends on collision, click "Play Again" to restart
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- NextJS 15
+- Functional Components & Hooks
+- CSS Flexbox & Grid
+- HTML5 Canvas (conceptual)
+- JavaScript ES6+
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
+```
+.
+├── jsconfig.json
+├── next.config.mjs
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── README.md
+├── src
+│   └── app
+│       ├── favicon.ico
+│       ├── globals.css     # Main styles
+│       ├── layout.js       # Root component
+│       └── page.js         # Game logic & components
+└── tailwind.config.mjs
 
-## Deploy on Vercel
+3 directories, 16 files
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please follow these steps:
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Acknowledgements
+
+- React documentation
+- Create React App boilerplate
+- Classic Snake game mechanics
